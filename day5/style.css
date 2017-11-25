@@ -1,0 +1,114 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+p{
+    color: blueviolet;
+}
+.wrapper{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px;
+}
+.menu-ul{
+    list-style-type: none;
+}
+.menu-ul .menu-li{
+    float: left;
+    width: 100px;
+  }
+.menu-ul .menu-li a{
+   text-decoration: none;
+    border: #ccc solid 1px;
+    padding: 0 5px;
+    display: block;
+    text-align: center;
+    height: 50px;
+    padding-top: 14px;
+    background: black;
+    color: #ffffff;
+    transition: background 1s;
+  }
+.menu-ul .menu-li a:hover{
+    color: #000000;
+    background: green;
+
+  }
+.rel-left{
+    height: 200px;
+    width: 200px;
+    background: red;
+     margin-left:50px;
+    /*border-radius: 100px;*/
+    transform: skewY(32deg);
+    float: left;
+
+}
+.rel-right{
+    height: 200px;
+    width: 200px;
+    background: green;
+    margin-top: 50px;
+    /*border-radius: 100px;*/
+    transform: skewY(-32deg);
+    float: left;
+    margin: 0px;
+}
+.rel-trang{
+    height: 200px;
+    width: 400px;
+    background-color: red;
+    margin: 20px 0 0 20px;
+    animation: bitm;
+    animation-duration: 4s;
+    /*animation-iteration-count: 3;*/
+    animation-iteration-count: infinite;
+
+
+    /*transform: scale(1);*/
+    /*transition: 1s;*/
+    /*transform: rotate(10deg);*/
+
+}
+@keyframes bitm {
+    0%{ background-color: green; }
+    25%{ background-color: gray; width: 100px}
+    50%{ background-color: yellow; }
+    75%{ background-color: orange; height: 600px }
+    100%{ background-color: red; height: 200px }
+}
+.div-one{
+    height: 200px;
+    width: 100px;
+    background: red;
+    margin-top: 50px;
+    margin-left:50px;
+   border-radius: 100px 0 0 100px;
+
+}
+.div-two{
+    height: 100px;
+    width: 200px;
+    background: green;
+    border-radius: 100px 100px 0 0;
+    margin: 50px 0 0 50px;
+}.div-three{
+    height: 100px;
+    width: 200px;
+    background: green;
+    border-radius: 0px 0px 100px 100px;
+    margin: 50px 0 0 50px;
+}.div-four{
+    height: 200px;
+    width: 100px;
+    background: green;
+    border-radius: 0px 100px 100px 0px;
+    margin: 50px 0 0 50px;
+}
